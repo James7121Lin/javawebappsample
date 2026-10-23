@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,6 +8,7 @@
   <artifactId>calculator</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
+
   <build>
     <plugins>
       <plugin>
@@ -16,7 +18,7 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>    
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
@@ -62,6 +64,7 @@
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
@@ -77,6 +80,18 @@
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
       <version>2.22.2</version>
+    </dependency>
+
+    <!-- JAXB dependencies for Java 11 -->
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <version>2.3.8</version>
     </dependency>
   </dependencies>
 </project>
